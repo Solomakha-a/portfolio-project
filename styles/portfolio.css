@@ -91,6 +91,19 @@ h2 {
     padding: 120px 60px;
 }
 
+.about-section {
+    padding: 160px 20px;
+}
+
+.about-section h1 {
+    font-size: 64px;
+}
+
+.about-section h2 {
+    font-size: 18px;
+    font-family: var(--default-font-family);
+}
+
 
 
 

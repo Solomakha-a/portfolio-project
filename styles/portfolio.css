@@ -5,6 +5,7 @@
 --default-font-family: 'Poppins',
     sans-serif;
 --background-color: #F9F7FE;
+
 }
 
 body {
@@ -41,7 +42,7 @@ h2 {
 }
 
 .hero p {
-    font-size: 36px;
+    font-size: 40px;
     font-weight: bold;
     margin: 0;
     color: #272142;
@@ -124,7 +125,20 @@ h2 {
     
     font-size: 14px;
 }
+.work img:hover {
+   
+    
+}
 
+.contact-img {
+    
+    
+}
+
+.work-preview img {
+    
+    transition: all 200ms ease;
+}
 .work-inquiry {
     background: var(--background-color);
     padding: 30px;

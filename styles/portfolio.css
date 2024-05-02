@@ -92,7 +92,7 @@ h2 {
 }
 
 .project-description {
-    padding: 120px 60px;
+    padding: 100px 60px;
 }
 
 
@@ -122,23 +122,64 @@ h2 {
 }
 
 .content p {
-    
     font-size: 14px;
 }
-.work img:hover {
-   
-    
+
+.img-container {
+    position: relative;
+    width: 50%;
 }
 
-.contact-img {
-    
-    
+.img-container:hover .overlay {
+    opacity: 1;
 }
 
-.work-preview img {
-    
-    transition: all 200ms ease;
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease-in-out;
+    background-color: var(--brandining-color);
 }
+
+.work-img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay-text {
+    color: var(--background-color);
+    font-size: 20px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+
+.overlay-text-p {
+    color: var(--background-color);
+    opacity: 0.8;
+    font-size: 16px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
 .work-inquiry {
     background: var(--background-color);
     padding: 30px;
@@ -159,6 +200,18 @@ h2 {
     max-height: 50px;
 }
 
+.project-link {
+    cursor: pointer;
+    transition: 0.4s all ease-in-out;
+    
+}
+
+.project-link:hover {
+   
+    transform: scale(1.1);
+
+}
+
 
 nav ul {
     padding: 0;
@@ -172,17 +225,21 @@ nav li {
     margin-left: 15px;
 }
 
-nav a {
+.nav-link.active {
     text-decoration: none;
     color: #272142;
     transition: all 100ms ease-in-out;
 }
 
-nav a:hover, nav li.active a {
+.navbar-light .navbar-nav .nav-link.active {
     color: var(--brandining-color);
+    transition: all 0.7s;
 }
 
-@media (max-width: 900px) {
+
+
+
+@media (max-width: 1024px) {
    .content h1 {
         font-size: 40px;
     }
@@ -203,7 +260,6 @@ nav a:hover, nav li.active a {
     text-align: center;
     }
     .hero {
-    
     padding: 80px 20px; 
     }
 
@@ -219,6 +275,12 @@ nav a:hover, nav li.active a {
     .projects {
         margin-bottom: 30px;
     }
+
+ 
+
+    .overlay-text-p {
+            display: none;
+        }
 }
 
 

@@ -212,6 +212,14 @@ h2 {
 
 }
 
+.app-link {
+    text-decoration: none;
+    color: var(--background-color);
+}
+
+.app-link:hover {
+    text-decoration: underline;
+}
 
 nav ul {
     padding: 0;
@@ -239,7 +247,7 @@ nav li {
 
 
 
-@media (max-width: 1024px) {
+@media (max-width: 1230px) {
    .content h1 {
         font-size: 40px;
     }
